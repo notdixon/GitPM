@@ -1,0 +1,23 @@
+#+TITLE: GitPM
+#+DESCRIPTION: The Git Package Manager
+
+* Table of Contents :toc:
++ [[What is GitPM?]]
++ [[Usage]]
+  * [[Installing]]
+  * [[Configuration]]
+  * [[Installing Packages]]
+  * [[Removing Packages]]
++ [[LICENSE]]
+
+* What is GitPM?
+GitPM is a package manager for Linux (and maybe BSD) that instead of using a database file, similar to how ~apt~ or ~pacman~ works, it instead uses Git Repositories.
+This means you no longer have to worry about updating the cache with ~apt update~ or ~pacman -Sy~, as the database is GitHub or GitLab.
+
+* Usage
+** Installing
+To install GitPM, you simply need to have ~python~ installed, and the Python module ~colorama~. Then you can simply run
+
+#+BEGIN_EXAMPLE
+sudo make install
+#+END_EXAMPLE

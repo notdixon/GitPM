@@ -1,0 +1,60 @@
+.TH GITPM 1 gitpm\-0.1
+.SH NAME
+GitPM \- The Git Package Manager
+.SH SYNOPSIS
+.B gitpm
+.RB --github
+.RB --gitlab
+.RB --install
+.RB --remove
+.RB --build
+.RB --installed
+.RB --help
+
+.B gitpm
+.RB -gh
+.RB -gl
+.RB -i
+.RB -r
+.RB -b
+.RB -I
+.RB -h
+
+.SH DESCRIPTION
+.B GitPM
+is a package manager that, instead of using a database file that you have to
+update, instead uses Git Repositories from either GitHub or GitLab
+
+.SH EXAMPLES
+.SH \ \ \ 1: Installing 'emacs'
+.P
+gitpm --github emacs-mirror/emacs --install
+.SH \ \ \ 2: Building 'vim'
+.P
+gitpm --github vim/vim --build
+.SH \ \ \ 3: Removing 'neofetch'
+.P
+gitpm --remove dylanaraps/neofetch
+.SH \ \ \ 4: Listing Installed Packages
+.P
+gitpm --installed
+
+.SH LICENSE
+Copyright (C) 2022  notdixon
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+The source code is available on GitHub at https://github.com/notdixon/gitpm, and
+the GNU GPL2 license is installed to /usr/share/doc/gitpm/LICENSE
